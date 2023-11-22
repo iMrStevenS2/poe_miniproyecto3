@@ -13,13 +13,4 @@ public List<Contacto> listarContactos();
 }
 
 
-// public class ContactoDAO {
-//     public void guardarContacto(Contacto contacto) {
-//         // Implementar la lógica para guardar un contacto en la base de datos
-//     }
 
-//     public Contacto cargarContactoPorIdentificacion(String numeroIdentificacion) {
-//         // Implementar la lógica para cargar un contacto desde la base de datos
-//         return null;
-//     }
-// }
