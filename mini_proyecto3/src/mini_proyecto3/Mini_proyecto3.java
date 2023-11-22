@@ -4,6 +4,8 @@
  */
 package mini_proyecto3;
 
+import mini_proyecto3.vista.directorioUI;
+
 /**
  *
  * @author steve
@@ -15,6 +17,7 @@ public class Mini_proyecto3 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        directorioUI dir = new directorioUI();
     }
     
 }
