@@ -23,41 +23,70 @@ class Contacto {
         this.tipoContacto = tipoContacto;
     }
 
-    public void agregarDireccion(Direccion Direccion) {
-        direcciones.add(Direccion);
+    public Contacto() {
+        this.fechaNacimiento = "";
+        this.numeroIdentificacion = "";
+        this.nombres = "";
+        this.apellidos = "";
+        this.direcciones = new ArrayList<>();
+        this.telefonos = new ArrayList<>();
+        this.tipoContacto = null;
     }
 
-    public void actualizarDireccion(Direccion direccionAntigua, Direccion direccionNueva) {
-        if (direcciones.contains(direccionAntigua)) {
-            int index = direcciones.indexOf(direccionAntigua);
-            direcciones.set(index, direccionNueva);
-        }
+    public String getFechaNacimiento() {
+        return fechaNacimiento;
     }
 
-    public void eliminarDireccion(Direccion Direccion) {
-        direcciones.remove(Direccion);
+    public void setFechaNacimiento(String fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
     }
 
-    public List<Direccion> listarDirecciones() {
+    public String getNumeroIdentificacion() {
+        return numeroIdentificacion;
+    }
+
+    public void setNumeroIdentificacion(String numeroIdentificacion) {
+        this.numeroIdentificacion = numeroIdentificacion;
+    }
+
+    public String getNombres() {
+        return nombres;
+    }
+
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    public List<Direccion> getDirecciones() {
         return direcciones;
     }
 
-    public void agregarTelefono(Telefono telefono) {
-        telefonos.add(telefono);
+    public void setDirecciones(List<Direccion> direcciones) {
+        this.direcciones = direcciones;
     }
 
-    public void actualizarTelefono(Telefono telefonoAntiguo, Telefono telefonoNuevo) {
-        if (telefonos.contains(telefonoAntiguo)) {
-            int index = telefonos.indexOf(telefonoAntiguo);
-            telefonos.set(index, telefonoNuevo);
-        }
-    }
-
-    public void eliminarTelefono(Telefono telefono) {
-        telefonos.remove(telefono);
-    }
-
-    public List<Telefono> listarTelefonos() {
+    public List<Telefono> getTelefonos() {
         return telefonos;
     }
+
+    public void setTelefonos(List<Telefono> telefonos) {
+        this.telefonos = telefonos;
+    }
+
+    public TipoContacto getTipoContacto() {
+        return tipoContacto;
+    }
+
+    public void setTipoContacto(TipoContacto tipoContacto) {
+        this.tipoContacto = tipoContacto;
+    }
+
 }
