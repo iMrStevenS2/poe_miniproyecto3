@@ -3,7 +3,9 @@ package mini_proyecto3.modelo;
 import java.util.ArrayList;
 import java.util.List;
 
-class Contacto {
+import mini_proyecto3.controlador.TipoContacto;
+
+public class Contacto {
     private String fechaNacimiento;
     private String numeroIdentificacion;
     private String nombres;

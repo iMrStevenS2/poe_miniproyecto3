@@ -1,5 +1,5 @@
 package mini_proyecto3.modelo;
 
-enum TipoLugar {
+public enum TipoLugar {
     MOVIL, CASA, OFICINA
 }

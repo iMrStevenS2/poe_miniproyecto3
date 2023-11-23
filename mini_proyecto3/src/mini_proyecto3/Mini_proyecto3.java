@@ -4,6 +4,8 @@
  */
 package mini_proyecto3;
 
+import mini_proyecto3.controlador.ContactoController;
+import mini_proyecto3.modelo.Contacto;
 import mini_proyecto3.vista.directorioUI;
 
 /**
@@ -17,7 +19,13 @@ public class Mini_proyecto3 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Contacto contactoModelo = new Contacto();
         directorioUI dir = new directorioUI();
+        ContactoController contactoController = new ContactoController(contactoModelo, dir  );
+        // contactoController.agregarContacto();
+        // contactoController.listarContactos();
+        dir.setVisible(true);
+
     }
-    
+
 }

@@ -1,11 +1,18 @@
 package mini_proyecto3.modelo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ContactoDAOImp implements ContactoDAO {
 
+    List<Contacto> listaContactos = new ArrayList<>();
+    
+
     @Override
     public void agregarContacto(Contacto contacto) {
+        listaContactos.add(contacto);
+        System.out.println("Contacto agregado");
+        
     }
 
     @Override
@@ -18,7 +25,7 @@ public class ContactoDAOImp implements ContactoDAO {
 
     @Override
     public List<Contacto> listarContactos() {
-        throw new UnsupportedOperationException("Unimplemented method 'listarContactos'");
+        return listaContactos;
     }
 
 }

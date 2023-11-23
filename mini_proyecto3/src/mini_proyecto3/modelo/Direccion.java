@@ -1,44 +1,22 @@
 package mini_proyecto3.modelo;
 
 public class Direccion {
-    private String calle;
-    private String ciudad;
-    private String pais;
+    private String direccion;
 
-    public Direccion(String calle, String ciudad, String pais) {
-        this.calle = calle;
-        this.ciudad = ciudad;
-        this.pais = pais;
+    public Direccion(String direccion) {
+        this.direccion = direccion;
     }
 
     public Direccion() {
-        this.calle = "";
-        this.ciudad = "";
-        this.pais = "";
+        this.direccion = "";
     }
 
-    public String getCalle() {
-        return calle;
+    public String getDireccion() {
+        return direccion;
     }
 
-    public void setCalle(String calle) {
-        this.calle = calle;
-    }
-
-    public String getCiudad() {
-        return ciudad;
-    }
-
-    public void setCiudad(String ciudad) {
-        this.ciudad = ciudad;
-    }
-
-    public String getPais() {
-        return pais;
-    }
-
-    public void setPais(String pais) {
-        this.pais = pais;
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
 }
